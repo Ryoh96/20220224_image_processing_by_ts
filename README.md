@@ -1,2 +1,4 @@
-# 20220224_image_processing_by_ts
-# 20220224_image_processing_by_ts
+# 簡易的な画像処理  
+ブログ用  
+  
+## 主なフィルタ
