@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <h1>簡易画像処理</h1>
+  <input type="file" id="fileInput" name="file" />
+  <div class="flex-container">
+  <div class="flex-left">
+    <canvas id="canvas-in"></canvas>
+    <select class="select-filter">
+      <option value="">フィルターを選択</option>
+      <option value="binary">2値化</option>
+      <option value="grayscale">グレースケール</option>
+      <option value="brighten">明るく</option>
+      <option value="redness">赤く</option>
+      <option value="invert">ネガポジ反転</option>
+      <option value="laplacian">エッジ</option>
+      <option value="gaussian">ぼかし</option>
+      <option value="sharp">シャープ</option>
+      <option value="median">ノイズ除去</option>
+    </select>
+  </div>
+  <div class="flex-right">
+    <p>出力↓↓</p>
+    <canvas id="canvas-out"></canvas>
+  </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
+
+<canvas id="canvas-in"></canvas>
+<canvas id="canvas-out"></canvas>
